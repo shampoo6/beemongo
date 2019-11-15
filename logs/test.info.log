@@ -1,0 +1,7 @@
+2019/11/15 10:38:09.297 [I] [beego.go:103]  自动建表，扫描目录：
+2019/11/15 10:38:09.297 [I] [beego.go:103]  F:\go-work\src\beemongo\domains
+2019/11/15 10:38:09.297 [I] [pool.go:34]  数据库名：beemongo
+2019/11/15 10:38:09.313 [I] [pool.go:34]  数据库连接成功
+2019/11/15 10:38:09.313 [I] [hooks.go:31]  开始扫描 domains
+2019/11/15 10:38:09.313 [I] [hooks.go:31]  获取 domains 路径：F:\go-work\src\beemongo\domains
+2019/11/15 10:38:09.439 [I] [asm_amd64.s:1357]  http server Running on http://:10492

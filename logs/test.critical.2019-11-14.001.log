@@ -1,0 +1,41 @@
+2019/11/13 16:40:32.098 [C] [panic.go:679]  the request url is  /user/insert
+2019/11/13 16:40:32.099 [C] [panic.go:679]  Handler crashed with error reflect: call of reflect.Value.NumField on ptr Value
+2019/11/13 16:40:32.099 [C] [panic.go:679]  C:/Go/src/runtime/panic.go:679
+2019/11/13 16:40:32.099 [C] [panic.go:679]  C:/Go/src/reflect/value.go:208
+2019/11/13 16:40:32.099 [C] [panic.go:679]  C:/Go/src/reflect/value.go:1356
+2019/11/13 16:40:32.099 [C] [panic.go:679]  F:/go-work/src/beemongo/utils/copy_field/copy.go:10
+2019/11/13 16:40:32.099 [C] [panic.go:679]  F:/go-work/src/beemongo/service/user/user.go:11
+2019/11/13 16:40:32.119 [C] [panic.go:679]  F:/go-work/src/beemongo/controllers/user_controller.go:34
+2019/11/13 16:40:32.119 [C] [panic.go:679]  C:/Go/src/reflect/value.go:460
+2019/11/13 16:40:32.119 [C] [panic.go:679]  C:/Go/src/reflect/value.go:321
+2019/11/13 16:40:32.119 [C] [panic.go:679]  F:/go-work/src/github.com/astaxie/beego/router.go:853
+2019/11/13 16:40:32.119 [C] [panic.go:679]  C:/Go/src/net/http/server.go:2802
+2019/11/13 16:40:32.119 [C] [panic.go:679]  C:/Go/src/net/http/server.go:1890
+2019/11/13 16:40:32.119 [C] [panic.go:679]  C:/Go/src/runtime/asm_amd64.s:1357
+2019/11/13 16:45:50.723 [C] [panic.go:679]  the request url is  /user/insert
+2019/11/13 16:45:50.723 [C] [panic.go:679]  Handler crashed with error reflect: call of reflect.Value.Elem on struct Value
+2019/11/13 16:45:50.723 [C] [panic.go:679]  C:/Go/src/runtime/panic.go:679
+2019/11/13 16:45:50.723 [C] [panic.go:679]  C:/Go/src/reflect/value.go:830
+2019/11/13 16:45:50.723 [C] [panic.go:679]  F:/go-work/src/beemongo/utils/copy_field/copy.go:9
+2019/11/13 16:45:50.723 [C] [panic.go:679]  F:/go-work/src/beemongo/service/user/user.go:11
+2019/11/13 16:45:50.723 [C] [panic.go:679]  F:/go-work/src/beemongo/controllers/user_controller.go:34
+2019/11/13 16:45:50.723 [C] [panic.go:679]  C:/Go/src/reflect/value.go:460
+2019/11/13 16:45:50.723 [C] [panic.go:679]  C:/Go/src/reflect/value.go:321
+2019/11/13 16:45:50.723 [C] [panic.go:679]  F:/go-work/src/github.com/astaxie/beego/router.go:853
+2019/11/13 16:45:50.724 [C] [panic.go:679]  C:/Go/src/net/http/server.go:2802
+2019/11/13 16:45:50.724 [C] [panic.go:679]  C:/Go/src/net/http/server.go:1890
+2019/11/13 16:45:50.724 [C] [panic.go:679]  C:/Go/src/runtime/asm_amd64.s:1357
+2019/11/13 16:46:53.754 [C] [panic.go:679]  the request url is  /user/insert
+2019/11/13 16:46:53.754 [C] [panic.go:679]  Handler crashed with error reflect: call of reflect.Value.NumField on interface Value
+2019/11/13 16:46:53.754 [C] [panic.go:679]  C:/Go/src/runtime/panic.go:679
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/reflect/value.go:208
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/reflect/value.go:1356
+2019/11/13 16:46:53.755 [C] [panic.go:679]  F:/go-work/src/beemongo/utils/copy_field/copy.go:10
+2019/11/13 16:46:53.755 [C] [panic.go:679]  F:/go-work/src/beemongo/service/user/user.go:11
+2019/11/13 16:46:53.755 [C] [panic.go:679]  F:/go-work/src/beemongo/controllers/user_controller.go:34
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/reflect/value.go:460
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/reflect/value.go:321
+2019/11/13 16:46:53.755 [C] [panic.go:679]  F:/go-work/src/github.com/astaxie/beego/router.go:853
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/net/http/server.go:2802
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/net/http/server.go:1890
+2019/11/13 16:46:53.755 [C] [panic.go:679]  C:/Go/src/runtime/asm_amd64.s:1357

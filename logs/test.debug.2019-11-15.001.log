@@ -1,0 +1,1130 @@
+2019/11/14 10:20:06.964 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:20:06.965 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:20:06.965 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:20:06.965 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:20:07.550 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:20:07.550 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:20:07.550 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:20:07.551 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:20:07.551 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:20:07.551 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:20:08.319 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:20:08.319 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:20:08.319 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:20:08.319 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:20:08.949 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:20:08.949 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:20:08.949 [D] [scanner.go:67]  [8] 	Age int8 // 年龄
+2019/11/14 10:20:08.949 [D] [scanner.go:84]  读取字段：	Age int8 // 年龄
+2019/11/14 10:20:09.539 [D] [scanner.go:67]  [9] }
+2019/11/14 10:21:16.332 [D] [user_service.go:21]  domains.User
+2019/11/14 10:21:16.332 [D] [user_service.go:21]  这还没有结束
+2019/11/14 10:21:16.333 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male -106}
+2019/11/14 10:21:16.334 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|  47.3463678s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 10:22:29.828 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:22:29.828 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:22:29.828 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:22:29.828 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:22:30.382 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:22:30.382 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:22:30.382 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:22:30.382 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:22:30.382 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:22:30.382 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:22:30.948 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:22:30.948 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:22:30.948 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:22:30.948 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:22:31.519 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:22:31.519 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:22:31.519 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:22:31.519 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:22:32.095 [D] [scanner.go:67]  [9] }
+2019/11/14 10:24:03.231 [D] [user_service.go:21]  domains.User
+2019/11/14 10:24:48.748 [D] [user_service.go:21]  这还没有结束
+2019/11/14 10:24:48.749 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:24:48.749 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m| 2m9.9324774s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 10:26:19.786 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:26:19.787 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:26:19.787 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:26:19.787 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:26:20.356 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:26:20.357 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:26:20.357 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:26:20.357 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:26:20.357 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:26:20.357 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:26:20.929 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:26:20.929 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:26:20.929 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:26:20.929 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:26:21.516 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:26:21.516 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:26:21.516 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:26:21.516 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:26:22.095 [D] [scanner.go:67]  [9] }
+2019/11/14 10:28:09.916 [D] [user_service.go:21]  domains.User
+2019/11/14 10:28:18.904 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:28:33.292 [D] [user_service.go:21]  这还没有结束
+2019/11/14 10:28:34.610 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:28:34.610 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|  27.3737827s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 10:35:09.001 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:35:09.002 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:35:09.002 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:35:09.002 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:35:09.567 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:35:09.567 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:35:09.567 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:35:09.567 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:35:09.567 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:35:09.567 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:35:10.171 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:35:10.171 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:35:10.171 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:35:10.171 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:35:10.750 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:35:10.750 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:35:10.750 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:35:10.750 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:35:11.333 [D] [scanner.go:67]  [9] }
+2019/11/14 10:37:45.083 [D] [user_service.go:21]  domains.User
+2019/11/14 10:37:45.658 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:37:45.659 [D] [user_service.go:21]  BaseDocument: domains.BaseDocument = {ObjectIdHex("5dbbb3789f784d1af2521092") 0 0}
+
+2019/11/14 10:37:45.659 [D] [user_service.go:21]  Name: string = Falma
+
+2019/11/14 10:37:45.659 [D] [user_service.go:21]  Sex: string = Male
+
+2019/11/14 10:37:45.659 [D] [user_service.go:21]  Age: int16 = 150
+
+2019/11/14 10:37:45.659 [D] [user_service.go:21]  这还没有结束
+2019/11/14 10:37:45.659 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:37:45.659 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|  18.6451311s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 10:50:45.768 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:50:45.768 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:50:45.768 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:50:45.768 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:50:46.335 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:50:46.336 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:50:46.336 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:50:46.336 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:50:46.336 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:50:46.336 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:50:46.896 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:50:46.896 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:50:46.896 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:50:46.896 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:50:47.474 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:50:47.474 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:50:47.474 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:50:47.474 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:50:48.053 [D] [scanner.go:67]  [9] }
+2019/11/14 10:50:55.125 [D] [user_service.go:21]  domains.User
+2019/11/14 10:50:55.125 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:50:55.125 [D] [user_service.go:21]  BaseDocument: domains.BaseDocument = {ObjectIdHex("5dbbb3789f784d1af2521092") 0 0}
+
+2019/11/14 10:50:55.126 [D] [user_service.go:21]  Name: string = Falma
+
+2019/11/14 10:50:55.126 [D] [user_service.go:21]  Sex: string = Male
+
+2019/11/14 10:50:55.126 [D] [user_service.go:21]  Age: int16 = 150
+
+2019/11/14 10:50:55.126 [D] [user_service.go:21]  这还没有结束
+2019/11/14 10:50:55.126 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:50:55.126 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    2.777573s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 10:51:21.606 [D] [user_service.go:21]  domains.User
+2019/11/14 10:51:21.606 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:53:44.997 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:53:44.998 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:53:44.998 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:53:44.998 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:53:45.562 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:53:45.562 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:53:45.562 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:53:45.562 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:53:45.562 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:53:45.562 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:53:46.141 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:53:46.141 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:53:46.141 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:53:46.141 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:53:46.716 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:53:46.716 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:53:46.716 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:53:46.716 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:53:47.306 [D] [scanner.go:67]  [9] }
+2019/11/14 10:55:02.641 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:55:02.641 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:55:02.641 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:55:02.641 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:55:03.192 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:55:03.193 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:55:03.193 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:55:03.193 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:55:03.193 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:55:03.193 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:55:03.757 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:55:03.757 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:55:03.757 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:55:03.757 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:55:04.320 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:55:04.320 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:55:04.320 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:55:04.320 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:55:04.894 [D] [scanner.go:67]  [9] }
+2019/11/14 10:55:23.626 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 10:55:23.626 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 10:55:23.626 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 10:55:23.626 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 10:55:24.154 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 10:55:24.154 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 10:55:24.154 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 10:55:24.154 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 10:55:24.154 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 10:55:24.154 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 10:55:24.704 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 10:55:24.704 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:55:24.704 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 10:55:24.704 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 10:55:25.244 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 10:55:25.244 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 10:55:25.244 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 10:55:25.245 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 10:55:25.794 [D] [scanner.go:67]  [9] }
+2019/11/14 10:55:43.920 [D] [user_service.go:21]  domains.User
+2019/11/14 10:55:43.920 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 10:55:50.061 [D] [user_service.go:21]  BaseDocument找到了
+2019/11/14 11:00:23.289 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:00:23.289 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:00:23.289 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:00:23.289 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:00:23.832 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:00:23.832 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:00:23.832 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:00:23.832 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:00:23.832 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:00:23.832 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:00:24.420 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:00:24.420 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:00:24.420 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:00:24.420 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:00:25.007 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:00:25.007 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:00:25.007 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:00:25.007 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:00:25.581 [D] [scanner.go:67]  [9] }
+2019/11/14 11:00:30.517 [D] [user_service.go:21]  domains.User
+2019/11/14 11:00:30.518 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:00:34.333 [D] [user_service.go:21]  BaseDocument找到了
+2019/11/14 11:03:34.267 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:03:34.267 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:03:34.267 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:03:34.267 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:03:34.838 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:03:34.838 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:03:34.838 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:03:34.838 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:03:34.838 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:03:34.838 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:03:35.418 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:03:35.418 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:03:35.418 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:03:35.418 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:03:36.012 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:03:36.012 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:03:36.012 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:03:36.012 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:03:36.606 [D] [scanner.go:67]  [9] }
+2019/11/14 11:03:39.151 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:03:39.151 [D] [user_service.go:21]  0xc0019f1d80
+2019/11/14 11:06:29.044 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:06:29.044 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:06:29.044 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:06:29.044 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:06:29.613 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:06:29.613 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:06:29.613 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:06:29.613 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:06:29.613 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:06:29.613 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:06:30.345 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:06:30.345 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:06:30.345 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:06:30.346 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:06:30.943 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:06:30.943 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:06:30.943 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:06:30.943 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:06:31.613 [D] [scanner.go:67]  [9] }
+2019/11/14 11:06:34.752 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:06:34.753 [D] [user_service.go:21]  0xc0023c1160
+2019/11/14 11:08:01.583 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:08:01.583 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:08:01.583 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:08:01.583 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:08:02.133 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:08:02.133 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:08:02.133 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:08:02.133 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:08:02.133 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:08:02.133 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:08:02.709 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:08:02.709 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:08:02.709 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:08:02.709 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:08:03.274 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:08:03.274 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:08:03.274 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:08:03.274 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:08:03.851 [D] [scanner.go:67]  [9] }
+2019/11/14 11:08:10.338 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:08:10.338 [D] [user_service.go:21]  0xc0019838c0
+2019/11/14 11:08:12.674 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:08:12.674 [D] [user_service.go:21]  0xc001ac61b0
+2019/11/14 11:09:18.446 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:12:23.899 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:12:23.899 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:12:23.899 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:12:23.899 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:12:24.457 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:12:24.457 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:12:24.457 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:12:24.457 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:12:24.457 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:12:24.457 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:12:25.047 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:12:25.047 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:12:25.047 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:12:25.047 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:12:25.622 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:12:25.622 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:12:25.622 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:12:25.622 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:12:26.207 [D] [scanner.go:67]  [9] }
+2019/11/14 11:12:30.053 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:13:44.509 [D] [user_service.go:21]  0xc001552d60
+2019/11/14 11:13:59.056 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:13:59.057 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:13:59.057 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:13:59.057 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:13:59.609 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:13:59.609 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:13:59.609 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:13:59.609 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:13:59.609 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:13:59.609 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:14:00.191 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:14:00.192 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:14:00.192 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:14:00.192 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:14:00.773 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:14:00.773 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:14:00.773 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:14:00.773 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:14:01.368 [D] [scanner.go:67]  [9] }
+2019/11/14 11:14:17.246 [D] [user_service.go:21]  *interface {}
+2019/11/14 11:14:17.246 [D] [user_service.go:21]  0xc001af5c90
+2019/11/14 11:16:36.489 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:16:36.489 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:16:36.489 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:16:36.489 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:16:37.047 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:16:37.047 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:16:37.047 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:16:37.047 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:16:37.047 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:16:37.047 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:16:37.623 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:16:37.623 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:16:37.623 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:16:37.623 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:16:38.201 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:16:38.201 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:16:38.201 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:16:38.201 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:16:38.765 [D] [scanner.go:67]  [9] }
+2019/11/14 11:16:45.361 [D] [user_service.go:21]  domains.User
+2019/11/14 11:16:45.362 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:16:52.501 [D] [user_service.go:21]  BaseDocument找到了
+2019/11/14 11:18:07.668 [D] [user_service.go:21]  domains.User
+2019/11/14 11:18:07.669 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:18:09.550 [D] [user_service.go:21]  BaseDocument找到了
+2019/11/14 11:20:21.378 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:20:21.379 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:20:21.379 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:20:21.379 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:20:21.951 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:20:21.951 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:20:21.951 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:20:21.951 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:20:21.951 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:20:21.951 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:20:22.567 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:20:22.567 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:20:22.567 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:20:22.567 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:20:23.150 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:20:23.150 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:20:23.150 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:20:23.150 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:20:23.725 [D] [scanner.go:67]  [9] }
+2019/11/14 11:20:27.316 [D] [user_service.go:21]  domains.User
+2019/11/14 11:20:27.316 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:20:27.316 [D] [user_service.go:21]  BaseDocument找到了
+2019/11/14 11:24:51.060 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:24:51.061 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:24:51.061 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:24:51.061 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:24:51.613 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:24:51.613 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:24:51.613 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:24:51.613 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:24:51.613 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:24:51.613 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:24:52.183 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:24:52.183 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:24:52.183 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:24:52.183 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:24:52.759 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:24:52.759 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:24:52.759 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:24:52.759 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:24:53.326 [D] [scanner.go:67]  [9] }
+2019/11/14 11:25:11.366 [D] [user_service.go:21]  domains.User
+2019/11/14 11:25:11.366 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:28:47.800 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:28:47.800 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:28:47.801 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:28:47.801 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:28:48.362 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:28:48.362 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:28:48.362 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:28:48.362 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:28:48.362 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:28:48.362 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:28:48.939 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:28:48.939 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:28:48.939 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:28:48.939 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:28:49.527 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:28:49.527 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:28:49.527 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:28:49.527 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:28:50.108 [D] [scanner.go:67]  [9] }
+2019/11/14 11:28:55.858 [D] [user_service.go:21]  domains.User
+2019/11/14 11:28:55.858 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:33:37.052 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:33:37.052 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:33:37.052 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:33:37.052 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:33:37.624 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:33:37.624 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:33:37.624 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:33:37.624 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:33:37.624 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:33:37.624 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:33:38.203 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:33:38.203 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:33:38.203 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:33:38.203 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:33:38.772 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:33:38.772 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:33:38.772 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:33:38.772 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:33:39.342 [D] [scanner.go:67]  [9] }
+2019/11/14 11:33:44.469 [D] [user_service.go:21]  domains.User
+2019/11/14 11:33:44.469 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 11:43:01.297 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 11:43:01.298 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 11:43:01.298 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 11:43:01.298 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 11:43:01.855 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 11:43:01.855 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 11:43:01.855 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 11:43:01.855 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 11:43:01.855 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 11:43:01.855 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 11:43:02.455 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 11:43:02.455 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:43:02.456 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 11:43:02.456 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 11:43:03.047 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 11:43:03.047 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 11:43:03.047 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 11:43:03.047 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 11:43:03.634 [D] [scanner.go:67]  [9] }
+2019/11/14 11:43:09.401 [D] [user_service.go:21]  domains.User
+2019/11/14 11:43:09.401 [D] [user_service.go:21]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 12:20:49.343 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 12:20:49.343 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 12:20:49.343 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 12:20:49.343 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 12:20:49.907 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 12:20:49.907 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 12:20:49.907 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 12:20:49.907 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 12:20:49.907 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 12:20:49.907 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 12:20:50.479 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 12:20:50.480 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:20:50.480 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 12:20:50.480 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 12:20:51.041 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 12:20:51.041 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:20:51.041 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 12:20:51.042 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 12:20:51.605 [D] [scanner.go:67]  [9] }
+2019/11/14 12:22:06.201 [D] [user_service.go:15]  {Id  string  0 [0] false}
+2019/11/14 12:22:06.201 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 12:22:06.201 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m| 1m7.5054469s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 12:23:59.077 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 12:23:59.077 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 12:23:59.077 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 12:23:59.077 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 12:23:59.637 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 12:23:59.637 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 12:23:59.637 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 12:23:59.637 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 12:23:59.637 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 12:23:59.637 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 12:24:00.233 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 12:24:00.233 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:24:00.233 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 12:24:00.234 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 12:24:00.806 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 12:24:00.806 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:24:00.806 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 12:24:00.806 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 12:24:01.387 [D] [scanner.go:67]  [9] }
+2019/11/14 12:26:06.378 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 12:26:06.378 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 12:26:06.378 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 12:26:06.378 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 12:26:06.913 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 12:26:06.913 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 12:26:06.913 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 12:26:06.913 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 12:26:06.913 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 12:26:06.913 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 12:26:07.491 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 12:26:07.491 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:26:07.491 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 12:26:07.491 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 12:26:08.049 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 12:26:08.049 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:26:08.049 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 12:26:08.050 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 12:26:08.599 [D] [scanner.go:67]  [9] }
+2019/11/14 12:27:35.518 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 12:27:35.519 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 12:27:35.519 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 12:27:35.519 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 12:27:36.136 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 12:27:36.136 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 12:27:36.136 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 12:27:36.136 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 12:27:36.136 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 12:27:36.136 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 12:27:36.792 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 12:27:36.792 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:27:36.792 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 12:27:36.792 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 12:27:37.566 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 12:27:37.566 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:27:37.566 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 12:27:37.566 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 12:27:38.179 [D] [scanner.go:67]  [9] }
+2019/11/14 12:31:05.336 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 12:31:05.336 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 12:31:05.336 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 12:31:05.336 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 12:31:05.905 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 12:31:05.905 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 12:31:05.905 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 12:31:05.905 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 12:31:05.905 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 12:31:05.905 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 12:31:06.472 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 12:31:06.472 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:31:06.472 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 12:31:06.472 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 12:31:07.038 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 12:31:07.038 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:31:07.038 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 12:31:07.038 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 12:31:07.608 [D] [scanner.go:67]  [9] }
+2019/11/14 12:31:49.366 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 12:31:49.366 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|  38.4541515s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 12:34:30.132 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 12:34:30.132 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 12:34:30.132 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 12:34:30.132 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 12:34:30.666 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 12:34:30.666 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 12:34:30.666 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 12:34:30.666 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 12:34:30.666 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 12:34:30.666 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 12:34:31.226 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 12:34:31.226 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:34:31.226 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 12:34:31.226 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 12:34:31.769 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 12:34:31.769 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 12:34:31.769 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 12:34:31.770 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 12:34:32.317 [D] [scanner.go:67]  [9] }
+2019/11/14 12:34:38.192 [D] [user_controller.go:34]  {{ObjectIdHex("5dbbb3789f784d1af2521092") 0 0} Falma Male 150}
+2019/11/14 12:34:38.193 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|           0s|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 13:58:37.688 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 13:58:37.688 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 13:58:37.688 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 13:58:37.688 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 13:58:38.251 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 13:58:38.251 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 13:58:38.251 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 13:58:38.251 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 13:58:38.251 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 13:58:38.252 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 13:58:38.828 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 13:58:38.828 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 13:58:38.828 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 13:58:38.828 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 13:58:39.397 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 13:58:39.397 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 13:58:39.397 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 13:58:39.397 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 13:58:39.976 [D] [scanner.go:67]  [9] }
+2019/11/14 14:00:11.158 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:00:11.158 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:00:11.159 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:00:11.159 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:00:11.720 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:00:11.720 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:00:11.720 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:00:11.720 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:00:11.720 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:00:11.720 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:00:12.350 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:00:12.350 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:00:12.350 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:00:12.350 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:00:12.920 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:00:12.920 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:00:12.920 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:00:12.920 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:00:13.513 [D] [scanner.go:67]  [9] }
+2019/11/14 14:01:24.220 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:01:24.220 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:01:24.220 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:01:24.220 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:01:24.752 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:01:24.752 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:01:24.752 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:01:24.752 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:01:24.752 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:01:24.753 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:01:25.328 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:01:25.328 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:01:25.328 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:01:25.329 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:01:25.878 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:01:25.878 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:01:25.879 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:01:25.879 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:01:26.429 [D] [scanner.go:67]  [9] }
+2019/11/14 14:01:54.080 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:01:54.080 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:01:54.080 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:01:54.080 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:01:54.613 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:01:54.613 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:01:54.613 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:01:54.613 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:01:54.613 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:01:54.613 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:01:55.166 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:01:55.167 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:01:55.167 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:01:55.167 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:01:55.704 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:01:55.704 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:01:55.704 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:01:55.705 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:01:56.260 [D] [scanner.go:67]  [9] }
+2019/11/14 14:05:33.087 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:05:33.087 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:05:33.087 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:05:33.087 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:05:33.653 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:05:33.653 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:05:33.653 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:05:33.653 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:05:33.653 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:05:33.653 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:05:34.234 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:05:34.234 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:05:34.234 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:05:34.234 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:05:34.803 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:05:34.803 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:05:34.803 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:05:34.803 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:05:35.383 [D] [scanner.go:67]  [9] }
+2019/11/14 14:11:23.965 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:11:23.965 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:11:23.965 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:11:23.965 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:11:24.533 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:11:24.533 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:11:24.533 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:11:24.533 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:11:24.533 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:11:24.533 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:11:25.101 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:11:25.101 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:11:25.101 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:11:25.101 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:11:25.678 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:11:25.678 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:11:25.678 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:11:25.678 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:11:26.246 [D] [scanner.go:67]  [9] }
+2019/11/14 14:15:21.681 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:15:21.681 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:15:21.681 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:15:21.681 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:15:22.228 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:15:22.228 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:15:22.228 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:15:22.228 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:15:22.228 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:15:22.228 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:15:22.809 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:15:22.809 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:15:22.809 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:15:22.809 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:15:23.373 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:15:23.373 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:15:23.373 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:15:23.373 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:15:23.942 [D] [scanner.go:67]  [9] }
+2019/11/14 14:21:39.116 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:21:39.116 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:21:39.117 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:21:39.117 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:21:39.669 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:21:39.669 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:21:39.669 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:21:39.669 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:21:39.669 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:21:39.669 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:21:40.254 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:21:40.254 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:21:40.254 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:21:40.254 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:21:40.830 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:21:40.830 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:21:40.830 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:21:40.830 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:21:41.403 [D] [scanner.go:67]  [9] }
+2019/11/14 14:27:33.777 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:27:33.777 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:27:33.777 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:27:33.777 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:27:34.356 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:27:34.356 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:27:34.356 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:27:34.356 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:27:34.356 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:27:34.356 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:27:34.945 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:27:34.945 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:27:34.945 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:27:34.945 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:27:35.516 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:27:35.517 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:27:35.517 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:27:35.517 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:27:36.107 [D] [scanner.go:67]  [9] }
+2019/11/14 14:28:12.906 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:28:12.906 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:28:12.906 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:28:12.906 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:28:13.459 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:28:13.459 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:28:13.459 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:28:13.459 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:28:13.459 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:28:13.459 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:28:14.044 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:28:14.044 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:28:14.044 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:28:14.044 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:28:14.628 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:28:14.628 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:28:14.628 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:28:14.628 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:28:15.212 [D] [scanner.go:67]  [9] }
+2019/11/14 14:28:42.737 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:28:42.737 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:28:42.737 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:28:42.737 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:28:43.300 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:28:43.300 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:28:43.300 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:28:43.300 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:28:43.300 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:28:43.300 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:28:43.878 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:28:43.878 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:28:43.878 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:28:43.878 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:28:44.464 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:28:44.464 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:28:44.464 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:28:44.464 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:28:45.057 [D] [scanner.go:67]  [9] }
+2019/11/14 14:31:14.205 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:31:14.206 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:31:14.206 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:31:14.206 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:31:14.769 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:31:14.769 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:31:14.769 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:31:14.769 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:31:14.769 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:31:14.769 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:31:15.369 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:31:15.369 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:31:15.369 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:31:15.369 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:31:15.942 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:31:15.942 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:31:15.942 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:31:15.943 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:31:16.526 [D] [scanner.go:67]  [9] }
+2019/11/14 14:32:49.003 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\baseDocument.go
+2019/11/14 14:32:49.003 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 14:32:49.003 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 14:32:49.003 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 14:32:49.564 [D] [scanner.go:67]  [2] 	BaseDocument
+2019/11/14 14:32:49.564 [D] [scanner.go:67]  [3] 	// @Index unique
+2019/11/14 14:32:49.564 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 14:32:49.564 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 14:32:49.564 [D] [scanner.go:67]  [4] 	Name string // 姓名
+2019/11/14 14:32:49.564 [D] [scanner.go:84]  读取字段：	Name string // 姓名
+2019/11/14 14:32:50.149 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 14:32:50.149 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:32:50.149 [D] [scanner.go:67]  [6] 	Sex string // 性别
+2019/11/14 14:32:50.149 [D] [scanner.go:84]  读取字段：	Sex string // 性别
+2019/11/14 14:32:50.726 [D] [scanner.go:67]  [7] 	// @Index
+2019/11/14 14:32:50.726 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 14:32:50.726 [D] [scanner.go:67]  [8] 	Age int16 // 年龄
+2019/11/14 14:32:50.726 [D] [scanner.go:84]  读取字段：	Age int16 // 年龄
+2019/11/14 14:32:51.309 [D] [scanner.go:67]  [9] }
+2019/11/14 18:12:28.821 [D] [scanner.go:32]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:12:28.821 [D] [scanner.go:67]  [1] type User struct {
+2019/11/14 18:12:28.821 [D] [scanner.go:82]  第一行：type User struct {
+2019/11/14 18:12:28.821 [D] [scanner.go:67]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:12:28.821 [D] [scanner.go:67]  [3] 	// @Index
+2019/11/14 18:12:28.821 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 18:12:28.821 [D] [scanner.go:67]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:12:28.821 [D] [scanner.go:84]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:12:28.924 [D] [scanner.go:67]  [5] 	// @Index
+2019/11/14 18:12:28.924 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 18:12:28.924 [D] [scanner.go:67]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:12:28.924 [D] [scanner.go:84]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:12:29.185 [D] [scanner.go:67]  [7] 	// @Index unique
+2019/11/14 18:12:29.186 [D] [scanner.go:84]  找到 @Index ：	// @Index unique
+2019/11/14 18:12:29.186 [D] [scanner.go:84]  找到 @Index unique
+2019/11/14 18:12:29.186 [D] [scanner.go:67]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:12:29.186 [D] [scanner.go:84]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:12:29.478 [D] [scanner.go:67]  [9] 	// @Index
+2019/11/14 18:12:29.478 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 18:12:29.478 [D] [scanner.go:67]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:12:29.478 [D] [scanner.go:84]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:12:29.688 [D] [scanner.go:67]  [11] 	// @Index
+2019/11/14 18:12:29.688 [D] [scanner.go:84]  找到 @Index ：	// @Index
+2019/11/14 18:12:29.688 [D] [scanner.go:67]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:12:29.688 [D] [scanner.go:84]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:12:30.028 [D] [scanner.go:67]  [13] }
+2019/11/14 18:13:41.824 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:13:41.824 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:13:41.824 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:13:41.824 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:13:41.824 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:13:41.824 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:13:41.824 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:13:41.824 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:13:41.898 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:13:41.898 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:13:41.898 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:13:41.898 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:13:42.024 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:13:42.024 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:13:42.024 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:13:42.024 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:13:42.024 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:13:42.400 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:13:42.400 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:13:42.400 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:13:42.400 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:13:42.643 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:13:42.643 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:13:42.643 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:13:42.643 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:13:42.959 [D] [scanner.go:66]  [13] }
+2019/11/14 18:17:30.154 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:17:30.154 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:17:30.154 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:17:30.154 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:17:30.154 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:17:30.154 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:17:30.154 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:17:30.154 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:17:30.154 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:17:30.154 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:17:30.154 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:17:30.154 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:17:30.155 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:17:30.155 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:17:30.155 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:17:30.155 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:17:30.155 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:17:30.155 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:17:30.155 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:17:30.156 [D] [scanner.go:66]  [13] }
+2019/11/14 18:18:12.809 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:18:12.809 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:18:12.809 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:18:12.809 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:18:12.809 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:18:12.809 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:18:12.809 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:18:12.809 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:18:12.809 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:18:12.809 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:18:12.809 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:18:12.809 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:18:12.810 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:18:12.810 [D] [scanner.go:66]  [13] }
+2019/11/14 18:18:14.546 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     1.9953ms|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 18:18:31.307 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    13.9619ms|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 18:20:01.703 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:20:01.703 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:20:01.704 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:20:01.704 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:20:01.704 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:20:01.704 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:20:01.704 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:20:01.704 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:20:01.704 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:20:01.704 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:20:01.704 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:20:01.704 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:20:01.704 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:20:01.704 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:20:01.704 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:20:01.705 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:20:01.705 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:20:01.705 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:20:01.705 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:20:01.705 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:20:01.705 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:20:01.705 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:20:01.705 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:20:01.705 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:20:01.705 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:20:01.705 [D] [scanner.go:66]  [13] }
+2019/11/14 18:20:30.649 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    17.9523ms|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 18:20:46.282 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    20.9424ms|   match|[46m POST    [0m /user/insert   r:/user/insert
+2019/11/14 18:30:56.041 [D] [server.go:2802]  |      127.0.0.1|[43m 404 [0m|      993.5µs| nomatch|[46m POST    [0m /user/update
+2019/11/14 18:31:22.305 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:31:22.305 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:31:22.305 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:31:22.305 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:31:22.305 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:31:22.305 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:31:22.305 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:31:22.305 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:31:22.305 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:31:22.306 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:31:22.306 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:31:22.306 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:31:22.306 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:31:22.306 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:31:22.306 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:31:22.306 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:31:22.307 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:31:22.307 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:31:22.307 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:31:22.307 [D] [scanner.go:66]  [13] }
+2019/11/14 18:31:52.822 [D] [server.go:2802]  |      127.0.0.1|[43m 404 [0m|      997.1µs| nomatch|[46m POST    [0m /user/update
+2019/11/14 18:32:30.649 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:32:30.650 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:32:30.650 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:32:30.650 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:32:30.650 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:32:30.650 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:32:30.650 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:32:30.651 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:32:30.651 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:32:30.651 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:32:30.651 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:32:30.652 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:32:30.652 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:32:30.652 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:32:30.652 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:32:30.652 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:32:30.652 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:32:30.652 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:32:30.652 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:32:30.652 [D] [scanner.go:66]  [13] }
+2019/11/14 18:32:40.672 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      998.1µs|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:32:51.096 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    17.9507ms|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:35:06.505 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:35:06.505 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:35:06.505 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:35:06.505 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:35:06.505 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:35:06.505 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:35:06.505 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:35:06.505 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:35:06.514 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:35:06.514 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:35:06.515 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:35:06.515 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:35:06.515 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:35:06.515 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:35:06.515 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:35:06.515 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:35:06.515 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:35:06.515 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:35:06.515 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:35:06.515 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:35:06.515 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:35:06.516 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:35:06.516 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:35:06.516 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:35:06.516 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:35:06.516 [D] [scanner.go:66]  [13] }
+2019/11/14 18:35:09.477 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     3.9885ms|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:35:30.824 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    12.9653ms|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:36:32.358 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|  42.4005928s|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:37:33.351 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|  21.5234322s|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:40:13.107 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:40:13.107 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:40:13.107 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:40:13.107 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:40:13.107 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:40:13.107 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:40:13.107 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:40:13.107 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:40:13.107 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:40:13.107 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:40:13.107 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:40:13.107 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:40:13.108 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:40:13.108 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:40:13.108 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:40:13.108 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:40:13.108 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:40:13.108 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:40:13.108 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:40:13.109 [D] [scanner.go:66]  [13] }
+2019/11/14 18:40:27.546 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|   2.6539014s|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:41:18.443 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|   2.8274325s|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:41:42.087 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|   4.0581447s|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:42:00.783 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     13.962ms|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:42:10.678 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|      996.5µs|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:43:00.849 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:43:00.849 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:43:00.849 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:43:00.849 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:43:00.849 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:43:00.849 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:43:00.849 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:43:00.849 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:43:00.849 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:43:00.849 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:43:00.849 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:43:00.849 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:43:00.850 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:43:00.850 [D] [scanner.go:66]  [13] }
+2019/11/14 18:43:06.690 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|     2.9918ms|   match|[46m POST    [0m /user/update   r:/user/update
+2019/11/14 18:51:39.508 [D] [scanner.go:31]  F:\go-work\src\beemongo\domains\user.go
+2019/11/14 18:51:39.508 [D] [scanner.go:66]  [1] type User struct {
+2019/11/14 18:51:39.508 [D] [scanner.go:81]  第一行：type User struct {
+2019/11/14 18:51:39.508 [D] [scanner.go:66]  [2] 	Id bson.ObjectId `bson:"_id"` // id
+2019/11/14 18:51:39.508 [D] [scanner.go:66]  [3] 	// @Index
+2019/11/14 18:51:39.508 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:51:39.508 [D] [scanner.go:66]  [4] 	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:51:39.509 [D] [scanner.go:83]  读取字段：	CreateTime int64 `bson:"CreateTime"` // 创建时间
+2019/11/14 18:51:39.509 [D] [scanner.go:66]  [5] 	// @Index
+2019/11/14 18:51:39.509 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:51:39.509 [D] [scanner.go:66]  [6] 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:51:39.509 [D] [scanner.go:83]  读取字段：	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
+2019/11/14 18:51:39.509 [D] [scanner.go:66]  [7] 	// @Index unique
+2019/11/14 18:51:39.509 [D] [scanner.go:83]  找到 @Index ：	// @Index unique
+2019/11/14 18:51:39.509 [D] [scanner.go:83]  找到 @Index unique
+2019/11/14 18:51:39.509 [D] [scanner.go:66]  [8] 	Name string `bson:"Name"` // 姓名
+2019/11/14 18:51:39.509 [D] [scanner.go:83]  读取字段：	Name string `bson:"Name"` // 姓名
+2019/11/14 18:51:39.509 [D] [scanner.go:66]  [9] 	// @Index
+2019/11/14 18:51:39.510 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:51:39.510 [D] [scanner.go:66]  [10] 	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:51:39.510 [D] [scanner.go:83]  读取字段：	Sex string `bson:"Sex"` // 性别
+2019/11/14 18:51:39.510 [D] [scanner.go:66]  [11] 	// @Index
+2019/11/14 18:51:39.510 [D] [scanner.go:83]  找到 @Index ：	// @Index
+2019/11/14 18:51:39.510 [D] [scanner.go:66]  [12] 	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:51:39.510 [D] [scanner.go:83]  读取字段：	Age int16 `bson:"Age"` // 年龄
+2019/11/14 18:51:39.510 [D] [scanner.go:66]  [13] }
+2019/11/14 18:51:51.206 [D] [server.go:2802]  |      127.0.0.1|[42m 200 [0m|    16.9543ms|   match|[46m POST    [0m /user/update   r:/user/update
