@@ -1,12 +1,13 @@
 package main
 
 import (
-	_ "beemongo/hooks/app/start"
+	_ "beemongo/conf"
 	_ "beemongo/routers"
 	"github.com/astaxie/beego"
 )
 
 func main() {
+
 	beego.Run()
 
 	//user := new(domains.User)
@@ -26,4 +27,18 @@ func main() {
 	//
 	//result := pool.GetConnectionPool().ExecDbFn(fn).([]domains.User)
 	//logs.Debug(result)
+
+	//recoverFunc := beego.BConfig.RecoverFunc
+	//beego.BConfig.RecoverFunc = func(c *context.Context){
+	//	logs.Debug("呵呵")
+	//}
+	//myFn := func(c *context.Context) {
+	//	logs.Debug("call recoverFunc")
+	//	logs.Debug(recoverFunc)
+	//	recoverFunc(c)
+	//	beego.BConfig.RecoverFunc(c)
+	//	logs.Debug("do myself")
+	//}
+	//logs.Debug(beego.BConfig.RecoverFunc)
+	//myFn(nil)
 }

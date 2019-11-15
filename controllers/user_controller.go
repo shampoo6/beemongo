@@ -1,10 +1,10 @@
 package controllers
 
 import (
+	"beemongo/errors"
 	"beemongo/models"
 	"beemongo/service/user"
 	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/logs"
 )
 
 type UserController struct {
@@ -13,7 +13,6 @@ type UserController struct {
 
 // @router /insert [get,post]
 func (c *UserController) Insert() {
-	result := map[string]interface{}{"result": "ok"}
 	u := models.UserDto{}
 	if err := c.ParseForm(&u); err != nil {
 		panic(err)
@@ -24,23 +23,16 @@ func (c *UserController) Insert() {
 		panic(err)
 	}
 	if !b {
-		result["result"] = "not ok"
-		for _, err := range valid.Errors {
-			logs.Error(err.Key, err.Message)
-			result[err.Key] = err.Message
-		}
+		panic(errors.CParamError(valid.Errors))
 	} else {
-		// insert 数据进数据库
 		user := user_service.Insert(&u)
-		result["data"] = user
+		c.Data["json"] = models.CSuccessResponse(*user)
 	}
-	c.Data["json"] = result
 	c.ServeJSON()
 }
 
 // @router /update [get,post]
 func (c *UserController) Update() {
-	result := map[string]interface{}{"result": "ok"}
 	u := models.UserDto{}
 	if err := c.ParseForm(&u); err != nil {
 		panic(err)
@@ -52,17 +44,11 @@ func (c *UserController) Update() {
 		panic(err)
 	}
 	if !b {
-		result["result"] = "not ok"
-		for _, err := range valid.Errors {
-			logs.Error(err.Key, err.Message)
-			result[err.Key] = err.Message
-		}
+		panic(errors.CParamError(valid.Errors))
 	} else {
-		// insert 数据进数据库
 		user := user_service.Update(&u)
-		result["data"] = user
+		c.Data["json"] = models.CSuccessResponse(*user)
 	}
-	c.Data["json"] = result
 	c.ServeJSON()
 }
 
