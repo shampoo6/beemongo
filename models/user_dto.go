@@ -22,6 +22,7 @@ func (u *UserDto) Validation() *validation.Validation {
 	valid := validation.Validation{}
 	valid.Required(u.Name, "Name").Message("姓名不能为空")
 	valid.Match(u.Sex, ptr, "Sex").Message("性别必须为 Male 或 Female")
+	valid.Required(u.Age, "Age").Message("年龄不能为空")
 	valid.Range(u.Age, 0, 200, "Age").Message("年龄必须在0~200之间")
 	return &valid
 }
