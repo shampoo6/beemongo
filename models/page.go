@@ -7,8 +7,8 @@ import (
 )
 
 type PageResult struct {
-	PageInfo *Page
-	Data     *[]interface{}
+	PageInfo Page
+	Data     []interface{}
 }
 
 type Page struct {

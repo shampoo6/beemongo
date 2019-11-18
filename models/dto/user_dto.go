@@ -1,7 +1,9 @@
 package dto
 
 import (
+	"beemongo/utils/string_util"
 	"github.com/astaxie/beego/validation"
+	"github.com/globalsign/mgo/bson"
 	"regexp"
 	"strings"
 )
@@ -33,4 +35,18 @@ func (u *UserDto) Valid(v *validation.Validation) {
 		// 通过 SetError 设置 Name 的错误信息，HasErrors 将会返回 true
 		_ = v.SetError("Name", "名称里不能含有 admin")
 	}
+}
+
+func (u *UserDto) GetQuery() bson.M {
+	query := bson.M{}
+	if string_util.HasText(u.Name) {
+		query["Name"] = bson.M{"$regex": "^(\\s|\\S)*" + u.Name + "(\\s|\\S)*$"}
+	}
+	if u.Age > 0 {
+		query["Age"] = u.Age
+	}
+	if string_util.HasText(u.Sex) {
+		query["Sex"] = u.Sex
+	}
+	return query
 }
