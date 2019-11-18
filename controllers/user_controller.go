@@ -1,12 +1,12 @@
 package controllers
 
 import (
-	"beemongo/errors"
-	"beemongo/models"
-	"beemongo/models/dto"
-	"beemongo/service/user"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
+	"github.com/shampoo6/beemongo/errors"
+	"github.com/shampoo6/beemongo/models"
+	"github.com/shampoo6/beemongo/models/dto"
+	"github.com/shampoo6/beemongo/service/user"
 	"regexp"
 )
 

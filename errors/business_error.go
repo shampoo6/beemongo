@@ -1,7 +1,7 @@
 package errors
 
 import (
-	"beemongo/constants"
+	"github.com/shampoo6/beemongo/constants"
 )
 
 var BusinessErrorName = "BusinessError"

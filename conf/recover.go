@@ -1,11 +1,11 @@
 package conf
 
 import (
-	"beemongo/errors"
-	"beemongo/models"
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/context"
+	"github.com/shampoo6/beemongo/errors"
+	"github.com/shampoo6/beemongo/models"
 	"reflect"
 )
 

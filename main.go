@@ -1,9 +1,9 @@
 package main
 
 import (
-	_ "beemongo/conf"
-	_ "beemongo/routers"
 	"github.com/astaxie/beego"
+	_ "github.com/shampoo6/beemongo/conf"
+	_ "github.com/shampoo6/beemongo/routers"
 )
 
 func main() {

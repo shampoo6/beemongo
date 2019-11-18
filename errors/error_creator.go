@@ -1,9 +1,9 @@
 package errors
 
 import (
-	"beemongo/constants"
 	"github.com/astaxie/beego/logs"
 	"github.com/astaxie/beego/validation"
+	"github.com/shampoo6/beemongo/constants"
 )
 
 func CError(status constants.ResponseStatus, content interface{}) BusinessError {

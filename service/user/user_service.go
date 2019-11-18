@@ -1,15 +1,15 @@
 package user_service
 
 import (
-	"beemongo/domains"
-	"beemongo/models"
-	"beemongo/models/dto"
-	"beemongo/mongo/cmd/common"
-	"beemongo/mongo/cmd/save"
-	"beemongo/mongo/connection/pool"
-	"beemongo/utils/copy_field"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
+	"github.com/shampoo6/beemongo/domains"
+	"github.com/shampoo6/beemongo/models"
+	"github.com/shampoo6/beemongo/models/dto"
+	"github.com/shampoo6/beemongo/mongo/cmd/common"
+	"github.com/shampoo6/beemongo/mongo/cmd/save"
+	"github.com/shampoo6/beemongo/mongo/connection/pool"
+	"github.com/shampoo6/beemongo/utils/copy_field"
 )
 
 func Insert(dto *dto.UserDto) *domains.User {

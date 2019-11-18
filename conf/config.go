@@ -1,7 +1,7 @@
 package conf
 
 import (
-	_ "beemongo/hooks/app/start"
+	_ "github.com/shampoo6/beemongo/hooks/app/start"
 )
 
 func init() {

@@ -1,9 +1,9 @@
 package dto
 
 import (
-	"beemongo/utils/string_util"
 	"github.com/astaxie/beego/validation"
 	"github.com/globalsign/mgo/bson"
+	"github.com/shampoo6/beemongo/utils/string_util"
 	"regexp"
 	"strings"
 )

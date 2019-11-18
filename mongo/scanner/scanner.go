@@ -1,10 +1,10 @@
 package scanner
 
 import (
-	"beemongo/mongo/connection/pool"
 	"bufio"
 	"github.com/astaxie/beego/logs"
 	"github.com/globalsign/mgo"
+	"github.com/shampoo6/beemongo/mongo/connection/pool"
 	"io"
 	"io/ioutil"
 	"os"

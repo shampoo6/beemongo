@@ -1,10 +1,10 @@
 package start
 
 import (
-	"beemongo/mongo/connection/pool"
-	"beemongo/mongo/scanner"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"github.com/shampoo6/beemongo/mongo/connection/pool"
+	"github.com/shampoo6/beemongo/mongo/scanner"
 	"path/filepath"
 )
 
@@ -15,7 +15,7 @@ func init() {
 }
 
 func initLog() error {
-	logs.SetLogger(logs.AdapterMultiFile, `{"filename":"logs/test.log","separate":["emergency", "alert", "critical", "error", "warning", "notice", "info", "debug"]}`)
+	_ = logs.SetLogger(logs.AdapterMultiFile, `{"filename":"logs/test.log","separate":["emergency", "alert", "critical", "error", "warning", "notice", "info", "debug"]}`)
 	return nil
 }
 

@@ -1,11 +1,11 @@
 package save
 
 import (
-	"beemongo/mongo/cmd/common"
-	"beemongo/mongo/connection/pool"
 	"github.com/astaxie/beego/logs"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
+	"github.com/shampoo6/beemongo/mongo/cmd/common"
+	"github.com/shampoo6/beemongo/mongo/connection/pool"
 	"reflect"
 	"time"
 )
@@ -16,8 +16,7 @@ func Save(iPtr interface{}) interface{} {
 	collectionName := vElem.Type().Name()
 	// 插入前操作
 
-	tElem := reflect.TypeOf(iPtr).Elem()
-	objectId, isInsert := preInsert(vElem, tElem)
+	objectId, isInsert := preInsert(vElem)
 
 	fn := func(db *mgo.Database) interface{} {
 		c := db.C(collectionName)
@@ -38,18 +37,18 @@ func Save(iPtr interface{}) interface{} {
 }
 
 // 第一个返回的字符串是id号 返回true 说明是insert操作，否则是update
-func preInsert(vElem reflect.Value, tElem reflect.Type) (bson.ObjectId, bool) {
+func preInsert(vElem reflect.Value) (bson.ObjectId, bool) {
 	var isInsert bool = false
 	var objectId bson.ObjectId = bson.NewObjectId()
 	id := vElem.FieldByName("Id").Interface().(bson.ObjectId)
-	time := time.Now().Unix()
+	_time := time.Now().Unix()
 	if id.Hex() == "" {
 		isInsert = true
 		vElem.FieldByName("Id").Set(reflect.ValueOf(objectId))
-		vElem.FieldByName("CreateTime").SetInt(time)
-		vElem.FieldByName("UpdateTime").SetInt(time)
+		vElem.FieldByName("CreateTime").SetInt(_time)
+		vElem.FieldByName("UpdateTime").SetInt(_time)
 	} else {
-		vElem.FieldByName("UpdateTime").SetInt(time)
+		vElem.FieldByName("UpdateTime").SetInt(_time)
 		objectId = vElem.FieldByName("Id").Interface().(bson.ObjectId)
 	}
 	return objectId, isInsert

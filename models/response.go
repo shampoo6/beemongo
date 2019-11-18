@@ -1,8 +1,8 @@
 package models
 
 import (
-	"beemongo/constants"
-	"beemongo/errors"
+	"github.com/shampoo6/beemongo/constants"
+	"github.com/shampoo6/beemongo/errors"
 )
 
 type Response struct {

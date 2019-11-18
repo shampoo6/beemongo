@@ -1,8 +1,8 @@
 package routers
 
 import (
-	"beemongo/controllers"
 	"github.com/astaxie/beego"
+	"github.com/shampoo6/beemongo/controllers"
 )
 
 func init() {
