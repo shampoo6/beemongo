@@ -10,13 +10,12 @@ import (
 	"beemongo/utils/copy_field"
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
-	"time"
 )
 
 func Insert(dto *dto.UserDto) *domains.User {
 	user := new(domains.User)
 	copy_field.Copy(dto, user)
-	user.Id = bson.ObjectId("")
+	user.Id = ""
 	user.Age = int16(dto.Age)
 	save.Save(user)
 	return user
@@ -26,13 +25,13 @@ func Update(dto *dto.UserDto) *domains.User {
 	user := new(domains.User)
 	copy_field.Copy(dto, user)
 	user.Age = int16(dto.Age)
-	user.UpdateTime = time.Now().Unix()
 	fn := func(db *mgo.Database) interface{} {
 		c := db.C("User")
 		change := mgo.Change{
 			Update:    common.GetUpdateM(user),
 			ReturnNew: true,
 		}
+		// findAndModify操作
 		_, _ = c.Find(bson.M{"_id": user.Id}).Apply(change, &user)
 		return user
 	}
