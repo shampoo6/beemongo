@@ -1,9 +1,9 @@
 package copy_field
 
 import (
-	"github.com/globalsign/mgo/bson"
+	"github.com/shampoo6/beemongo/utils/string_util"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"reflect"
-	"strings"
 )
 
 func Copy(strPtr interface{}, distPtr interface{}) {
@@ -28,16 +28,17 @@ func Copy(strPtr interface{}, distPtr interface{}) {
 		dst := dstV.FieldByName(v.Name)
 		src := srcV.FieldByName(v.Name)
 		if v.Name == "Id" {
-			if src.Type().Name() == "string" && dst.Type().Name() == "ObjectId" {
+			if src.Type().Name() == "string" && dst.Type().Name() == "ObjectID" {
 				id := src.Interface().(string)
-				id = strings.Trim(id, " ")
-				if id == "" {
+				if string_util.IsEmpty(id) {
 					continue
 				}
-				dst.Set(reflect.ValueOf(bson.ObjectIdHex(id)))
-			} else if src.Type().Name() == "ObjectId" && dst.Type().Name() == "string" {
-				id := src.Interface().(bson.ObjectId)
-				if id == bson.ObjectIdHex("") {
+				pId, _ := primitive.ObjectIDFromHex(id)
+				dst.Set(reflect.ValueOf(pId))
+			} else if src.Type().Name() == "ObjectID" && dst.Type().Name() == "string" {
+				id := src.Interface().(primitive.ObjectID)
+				pId, _ := primitive.ObjectIDFromHex("")
+				if id == pId {
 					continue
 				}
 				dst.SetString(id.Hex())

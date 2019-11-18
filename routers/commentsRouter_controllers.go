@@ -13,7 +13,6 @@ func init() {
 			Router:           `/insert`,
 			AllowHTTPMethods: []string{"get", "post"},
 			MethodParams:     param.Make(),
-			Filters:          nil,
 			Params:           nil})
 
 	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
@@ -22,7 +21,6 @@ func init() {
 			Router:           `/page`,
 			AllowHTTPMethods: []string{"get", "post"},
 			MethodParams:     param.Make(),
-			Filters:          nil,
 			Params:           nil})
 
 	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
@@ -31,7 +29,6 @@ func init() {
 			Router:           `/update`,
 			AllowHTTPMethods: []string{"get", "post"},
 			MethodParams:     param.Make(),
-			Filters:          nil,
 			Params:           nil})
 
 }

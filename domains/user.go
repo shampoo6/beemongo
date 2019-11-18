@@ -1,10 +1,12 @@
 package domains
 
-import "github.com/globalsign/mgo/bson"
+import (
+	"go.mongodb.org/mongo-driver/bson/primitive"
+)
 
 // @Document
 type User struct {
-	Id bson.ObjectId `bson:"_id"` // id
+	Id primitive.ObjectID `bson:"_id"` // id
 	// @Index
 	CreateTime int64 `bson:"CreateTime"` // 创建时间
 	// @Index
@@ -14,5 +16,5 @@ type User struct {
 	// @Index
 	Sex string `bson:"Sex"` // 性别
 	// @Index
-	Age int16 `bson:"Age"` // 年龄
+	Age uint8 `bson:"Age"` // 年龄
 }

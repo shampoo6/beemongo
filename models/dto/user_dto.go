@@ -2,8 +2,8 @@ package dto
 
 import (
 	"github.com/astaxie/beego/validation"
-	"github.com/globalsign/mgo/bson"
 	"github.com/shampoo6/beemongo/utils/string_util"
+	"go.mongodb.org/mongo-driver/bson"
 	"regexp"
 	"strings"
 )

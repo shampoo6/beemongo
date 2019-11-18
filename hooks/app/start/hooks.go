@@ -3,7 +3,6 @@ package start
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
-	"github.com/shampoo6/beemongo/mongo/connection/pool"
 	"github.com/shampoo6/beemongo/mongo/scanner"
 	"path/filepath"
 )
@@ -27,7 +26,6 @@ func initMongo() error {
 	}
 	logs.Info("自动建表，扫描目录：")
 	logs.Info(path)
-	pool.GetConnectionPool()
 	scanner.ScanDir(path)
 	return nil
 }

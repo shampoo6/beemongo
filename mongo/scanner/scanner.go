@@ -2,13 +2,17 @@ package scanner
 
 import (
 	"bufio"
+	"context"
 	"github.com/astaxie/beego/logs"
-	"github.com/globalsign/mgo"
-	"github.com/shampoo6/beemongo/mongo/connection/pool"
+	"github.com/shampoo6/beemongo/mongo/connection"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.mongodb.org/mongo-driver/x/bsonx"
 	"io"
 	"io/ioutil"
 	"os"
 	"strings"
+	"time"
 )
 
 var modelsDir string
@@ -144,37 +148,40 @@ func createDocument(line string) string {
 		panic("Document 格式错误，无法获取表名")
 	}
 	collectionName := lineArr[1]
-	fn := func(db *mgo.Database) interface{} {
-		db.C(collectionName)
-		return nil
-	}
-	pool.GetConnectionPool().ExecDbFn(fn)
+	db := connection.GetDB()
+	db.Collection(collectionName)
 	return collectionName
 }
 
-func createIndex(collectionName string, fieldName string, unique bool) {
-	//// 字段首字母小写
-	//fieldStr := ""
-	//for i, c := range fieldName {
-	//	//fieldStr += i == 0? unicode.ToLower(c):c
-	//	if i == 0 {
-	//		fieldStr += string(unicode.ToLower(c))
+func createIndex(collection string, key string, unique bool) {
+	db := connection.GetDB()
+	opts := options.CreateIndexes().SetMaxTime(10 * time.Second)
+
+	col := db.Collection(collection)
+	indexView := col.Indexes()
+
+	//keysDoc := bsonx.Doc{}
+
+	// 复合索引
+	//for _, key := range keys {
+	//	if strings.HasPrefix(key, "-") {
+	//		keysDoc = keysDoc.Append(strings.TrimLeft(key, "-"), bsonx.Int32(-1))
 	//	} else {
-	//		fieldStr += string(c)
+	//		keysDoc = keysDoc.Append(key, bsonx.Int32(1))
 	//	}
 	//}
-	fn := func(db *mgo.Database) interface{} {
-		collection := db.C(collectionName)
-		index := mgo.Index{
-			Key:        []string{fieldName}, // 索引字段， 默认升序,若需降序在字段前加-
-			Unique:     unique,              // 唯一索引 同mysql唯一索引
-			DropDups:   true,                // 索引重复替换旧文档,Unique为true时失效
-			Background: true,                // 后台创建索引
-		}
-		if err := collection.EnsureIndex(index); err != nil {
-			panic(err)
-		}
-		return nil
+
+	// 创建索引
+	result, err := indexView.CreateOne(
+		context.Background(),
+		mongo.IndexModel{
+			Keys:    bsonx.Doc{}.Append(key, bsonx.Int32(1)),
+			Options: options.Index().SetUnique(unique),
+		},
+		opts,
+	)
+	if err != nil {
+		panic(err)
 	}
-	pool.GetConnectionPool().ExecDbFn(fn)
+	logs.Info("创建索引结果：", result)
 }
