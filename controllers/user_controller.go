@@ -3,6 +3,7 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
+	"github.com/shampoo6/beemongo/constants"
 	"github.com/shampoo6/beemongo/errors"
 	"github.com/shampoo6/beemongo/models"
 	"github.com/shampoo6/beemongo/models/dto"
@@ -52,6 +53,17 @@ func (c *UserController) Update() {
 		user := user_service.Update(&u)
 		c.Data["json"] = models.CSuccessResponse(*user)
 	}
+	c.ServeJSON()
+}
+
+// @router /delete [get,post]
+func (c *UserController) DeleteAll() {
+	ids := c.GetStrings("ids")
+	if len(ids) == 0 {
+		msg := map[string]string{"ids": "id列表不能为空"}
+		panic(errors.BusinessError{Msg: constants.ParamError.Remark, Status: constants.ParamError, Content: msg})
+	}
+	c.Data["json"] = models.CSuccessResponse(user_service.DeleteAll(ids))
 	c.ServeJSON()
 }
 

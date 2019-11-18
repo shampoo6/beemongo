@@ -53,6 +53,24 @@ func SimpleFindAndModify(iPtr interface{}, result interface{}) {
 	FindAndModify(collectionName, bson.M{"_id": field.Interface()}, iPtr, result)
 }
 
+// 批量删除
+func DeleteAll(collectionName string, ids []string) int64 {
+	var bA = bson.A{}
+	for _, id := range ids {
+		objectId, _ := primitive.ObjectIDFromHex(id)
+		bA = append(bA, objectId)
+	}
+	collection := connection.GetDB().Collection(collectionName)
+	query := bson.M{"_id": bson.M{
+		"$in": bA,
+	}}
+	deleteResult, err := collection.DeleteMany(context.Background(), query)
+	if err != nil {
+		panic(err)
+	}
+	return deleteResult.DeletedCount
+}
+
 // 获取更新操作的bson，其中不会更新id和createTime，自动更新updateTime
 func GetUpdateM(iPtr interface{}) bson.M {
 	result := bson.M{}

@@ -19,7 +19,7 @@ func initLog() error {
 }
 
 func initMongo() error {
-	path, err := filepath.Abs("domains")
+	path, err := filepath.Abs("models/domains")
 	if err != nil {
 		logs.Error("自动建表，扫描目录异常")
 		panic(err)
