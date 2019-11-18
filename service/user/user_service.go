@@ -3,6 +3,7 @@ package user_service
 import (
 	"beemongo/domains"
 	"beemongo/models"
+	"beemongo/models/dto"
 	"beemongo/mongo/cmd/common"
 	"beemongo/mongo/cmd/save"
 	"beemongo/mongo/connection/pool"
@@ -13,7 +14,7 @@ import (
 	"time"
 )
 
-func Insert(dto *models.UserDto) *domains.User {
+func Insert(dto *dto.UserDto) *domains.User {
 	user := new(domains.User)
 	copy_field.Copy(dto, user)
 	user.Id = bson.ObjectId("")
@@ -22,7 +23,7 @@ func Insert(dto *models.UserDto) *domains.User {
 	return user
 }
 
-func Update(dto *models.UserDto) *domains.User {
+func Update(dto *dto.UserDto) *domains.User {
 	user := new(domains.User)
 	copy_field.Copy(dto, user)
 	user.Age = int16(dto.Age)
@@ -39,7 +40,7 @@ func Update(dto *models.UserDto) *domains.User {
 	return pool.GetConnectionPool().ExecDbFn(fn).(*domains.User)
 }
 
-func Page(page *models.Page, dto *models.UserDto) interface{} {
+func Page(page *models.Page, dto *dto.UserDto) interface{} {
 	fn := func(db *mgo.Database) interface{} {
 		c := db.C("User")
 		query := bson.M{}

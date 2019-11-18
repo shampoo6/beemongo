@@ -3,6 +3,7 @@ package controllers
 import (
 	"beemongo/errors"
 	"beemongo/models"
+	"beemongo/models/dto"
 	"beemongo/service/user"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
@@ -15,7 +16,7 @@ type UserController struct {
 
 // @router /insert [get,post]
 func (c *UserController) Insert() {
-	u := models.UserDto{}
+	u := dto.UserDto{}
 	if err := c.ParseForm(&u); err != nil {
 		panic(err)
 	}
@@ -35,7 +36,7 @@ func (c *UserController) Insert() {
 
 // @router /update [get,post]
 func (c *UserController) Update() {
-	u := models.UserDto{}
+	u := dto.UserDto{}
 	if err := c.ParseForm(&u); err != nil {
 		panic(err)
 	}
@@ -60,7 +61,7 @@ func (c *UserController) Page() {
 	if err := c.ParseForm(&page); err != nil {
 		panic(err)
 	}
-	dto := models.UserDto{}
+	dto := dto.UserDto{}
 	ptr := &dto
 	if err := c.ParseForm(ptr); err != nil {
 		panic(err)

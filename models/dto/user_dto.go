@@ -1,4 +1,4 @@
-package models
+package dto
 
 import (
 	"github.com/astaxie/beego/validation"
@@ -27,9 +27,10 @@ func (u *UserDto) Validation() *validation.Validation {
 	return &valid
 }
 
+// 自定义验证器，将在valid方法验证通过后执行
 func (u *UserDto) Valid(v *validation.Validation) {
 	if strings.Index(u.Name, "admin") != -1 {
 		// 通过 SetError 设置 Name 的错误信息，HasErrors 将会返回 true
-		v.SetError("Name", "名称里不能含有 admin")
+		_ = v.SetError("Name", "名称里不能含有 admin")
 	}
 }
