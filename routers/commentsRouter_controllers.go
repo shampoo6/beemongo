@@ -7,7 +7,7 @@ import (
 
 func init() {
 
-	beego.GlobalControllerRouter["beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["beemongo/controllers:UserController"],
+	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
 		beego.ControllerComments{
 			Method:           "Insert",
 			Router:           `/insert`,
@@ -16,7 +16,7 @@ func init() {
 			Filters:          nil,
 			Params:           nil})
 
-	beego.GlobalControllerRouter["beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["beemongo/controllers:UserController"],
+	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
 		beego.ControllerComments{
 			Method:           "Page",
 			Router:           `/page`,
@@ -25,7 +25,7 @@ func init() {
 			Filters:          nil,
 			Params:           nil})
 
-	beego.GlobalControllerRouter["beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["beemongo/controllers:UserController"],
+	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
 		beego.ControllerComments{
 			Method:           "Update",
 			Router:           `/update`,
