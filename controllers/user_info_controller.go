@@ -14,19 +14,23 @@ type UserInfoController struct {
 
 // @router /insert [post,get]
 func (c *UserInfoController) Insert() {
-	dto := dto.UserInfoDto{}
-	if err := c.ParseForm(&dto); err != nil {
+	_dto := getParam(c)
+	c.Data["json"] = models.CSuccessResponse(user_info.Insert(&_dto))
+	c.ServeJSON()
+}
+
+func getParam(c *UserInfoController) dto.UserInfoDto {
+	_dto := dto.UserInfoDto{}
+	if err := c.ParseForm(&_dto); err != nil {
 		panic(err)
 	}
-	valid := dto.Validation()
-	b, err := valid.Valid(&dto)
+	valid := _dto.Validation()
+	b, err := valid.Valid(&_dto)
 	if err != nil {
 		panic(err)
 	}
 	if !b {
 		panic(errors.CParamError(valid.Errors))
 	}
-	user_info.Insert(&dto)
-	c.Data["json"] = models.CSuccessResponse("Ok")
-	c.ServeJSON()
+	return _dto
 }

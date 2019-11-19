@@ -29,7 +29,7 @@ type UserInfo struct {
 	UpdateTime int64 `bson:"UpdateTime"`
 }
 
-func Insert(dto *dto.UserInfoDto) {
+func Insert(dto *dto.UserInfoDto) interface{} {
 	db := connection.GetDB()
 	_ = db.Client().UseSession(context.Background(), func(sessionContext mongo.SessionContext) error {
 		e := sessionContext.StartTransaction()
@@ -52,4 +52,10 @@ func Insert(dto *dto.UserInfoDto) {
 		_ = sessionContext.CommitTransaction(sessionContext)
 		return nil
 	})
+	collection := db.Collection("UserView")
+	objectId, _ := primitive.ObjectIDFromHex(dto.UserId)
+	singleResult := collection.FindOne(context.Background(), bson.M{"_id": objectId})
+	var result map[string]interface{}
+	_ = singleResult.Decode(&result)
+	return result
 }

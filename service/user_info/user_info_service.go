@@ -5,6 +5,6 @@ import (
 	"github.com/shampoo6/beemongo/models/dto"
 )
 
-func Insert(dto *dto.UserInfoDto) {
-	domains.Insert(dto)
+func Insert(dto *dto.UserInfoDto) interface{} {
+	return domains.Insert(dto)
 }
