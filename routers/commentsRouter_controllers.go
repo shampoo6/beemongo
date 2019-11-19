@@ -39,4 +39,12 @@ func init() {
 			MethodParams:     param.Make(),
 			Params:           nil})
 
+	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserInfoController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserInfoController"],
+		beego.ControllerComments{
+			Method:           "Insert",
+			Router:           `/insert`,
+			AllowHTTPMethods: []string{"post", "get"},
+			MethodParams:     param.Make(),
+			Params:           nil})
+
 }

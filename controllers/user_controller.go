@@ -49,10 +49,9 @@ func (c *UserController) Update() {
 	}
 	if !b {
 		panic(errors.CParamError(valid.Errors))
-	} else {
-		user := user_service.Update(&u)
-		c.Data["json"] = models.CSuccessResponse(*user)
 	}
+	user := user_service.Update(&u)
+	c.Data["json"] = models.CSuccessResponse(*user)
 	c.ServeJSON()
 }
 

@@ -65,7 +65,7 @@ func readFile(fileInfo os.FileInfo) {
 		line = string(bytes)
 		// logs.Debug(line)
 		if !startRead && !over {
-			startRead = strings.Contains(line, "@Document")
+			startRead = strings.Contains(line, "@document")
 		} else if !over {
 			over = documentReader(line)
 		}
@@ -113,12 +113,12 @@ func readIndex() func(line string, collectionName string) bool {
 	fn := func(line string, collectionName string) bool {
 		if count == 0 {
 			// 读取第一行 判断是否有 @Index
-			containIndex := strings.Contains(line, "@Index")
+			containIndex := strings.Contains(line, "@index")
 			if containIndex {
-				logs.Debug("找到 @Index ：%s", line)
+				logs.Debug("找到 @index ：%s", line)
 				unique = strings.Contains(line, "unique")
 				if unique {
-					logs.Debug("找到 @Index unique")
+					logs.Debug("找到 @index unique")
 				}
 				count++
 			}
@@ -128,7 +128,7 @@ func readIndex() func(line string, collectionName string) bool {
 			logs.Debug("读取字段：%s", line)
 			lineArr := strings.Fields(strings.TrimSpace(line))
 			if len(lineArr) < 1 {
-				panic("Document 格式错误，字段名")
+				panic("document 格式错误，字段名")
 			}
 			// 创建索引
 			createIndex(collectionName, lineArr[0], unique)

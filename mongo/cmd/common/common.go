@@ -12,7 +12,7 @@ import (
 
 // 将对象直接入库，如果id不存在就insert，存在就update
 // iPtr 就是需要保存的结构指针
-func Save(iPtr interface{}) interface{} {
+func Save(ctx context.Context, iPtr interface{}) interface{} {
 	// 获取表名
 	vElem := reflect.ValueOf(iPtr).Elem()
 	collectionName := vElem.Type().Name()
@@ -23,9 +23,9 @@ func Save(iPtr interface{}) interface{} {
 	collection := connection.GetDB().Collection(collectionName)
 	var err error
 	if isInsert {
-		_, err = collection.InsertOne(context.Background(), iPtr)
+		_, err = collection.InsertOne(ctx, iPtr)
 	} else {
-		_, err = collection.UpdateOne(context.Background(), bson.M{"_id": objectId}, GetUpdateM(iPtr))
+		_, err = collection.UpdateOne(ctx, bson.M{"_id": objectId}, GetUpdateM(iPtr))
 	}
 	if err != nil {
 		panic(err)
@@ -34,10 +34,10 @@ func Save(iPtr interface{}) interface{} {
 }
 
 // iPtr 就是需要更新的结构指针
-func FindAndModify(collectionName string, filter interface{}, iPtr interface{}, result interface{}) {
+func FindAndModify(ctx context.Context, collectionName string, filter interface{}, iPtr interface{}, result interface{}) {
 	collection := connection.GetDB().Collection(collectionName)
 	after := options.After
-	_result := collection.FindOneAndUpdate(context.Background(), filter, GetUpdateM(iPtr), &options.FindOneAndUpdateOptions{ReturnDocument: &after})
+	_result := collection.FindOneAndUpdate(ctx, filter, GetUpdateM(iPtr), &options.FindOneAndUpdateOptions{ReturnDocument: &after})
 	err := _result.Decode(result)
 	if err != nil {
 		panic(err)
@@ -45,16 +45,16 @@ func FindAndModify(collectionName string, filter interface{}, iPtr interface{}, 
 }
 
 // 简易更新，默认更新条件为匹配id，集合为iPtr的类型
-func SimpleFindAndModify(iPtr interface{}, result interface{}) {
+func SimpleFindAndModify(ctx context.Context, iPtr interface{}, result interface{}) {
 	// 获取表名
 	vElem := reflect.ValueOf(iPtr).Elem()
 	collectionName := vElem.Type().Name()
 	field := vElem.FieldByName("Id")
-	FindAndModify(collectionName, bson.M{"_id": field.Interface()}, iPtr, result)
+	FindAndModify(ctx, collectionName, bson.M{"_id": field.Interface()}, iPtr, result)
 }
 
 // 批量删除
-func DeleteAll(collectionName string, ids []string) int64 {
+func DeleteAll(ctx context.Context, collectionName string, ids []string) int64 {
 	var bA = bson.A{}
 	for _, id := range ids {
 		objectId, _ := primitive.ObjectIDFromHex(id)
@@ -64,7 +64,7 @@ func DeleteAll(collectionName string, ids []string) int64 {
 	query := bson.M{"_id": bson.M{
 		"$in": bA,
 	}}
-	deleteResult, err := collection.DeleteMany(context.Background(), query)
+	deleteResult, err := collection.DeleteMany(ctx, query)
 	if err != nil {
 		panic(err)
 	}

@@ -5,21 +5,22 @@ import (
 	"github.com/shampoo6/beemongo/models"
 	"github.com/shampoo6/beemongo/models/dto"
 	"github.com/shampoo6/beemongo/mongo/connection"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-// @Document
+// @document
 type User struct {
 	Id primitive.ObjectID `bson:"_id"` // id
-	// @Index
+	// @index
 	CreateTime int64 `bson:"CreateTime"` // 创建时间
-	// @Index
+	// @index
 	UpdateTime int64 `bson:"UpdateTime"` // 更新时间
-	// @Index unique
+	// @index unique
 	Name string `bson:"Name"` // 姓名
-	// @Index
+	// @index
 	Sex string `bson:"Sex"` // 性别
-	// @Index
+	// @index
 	Age uint8 `bson:"Age"` // 年龄
 }
 
@@ -45,4 +46,14 @@ func Page(page *models.Page, dto *dto.UserDto) models.PageResult {
 		*list = append(*list, u)
 	}
 	return models.PageResult{PageInfo: *page, Data: *list}
+}
+
+func Update(ctx context.Context, id string, update bson.M) {
+	collection := connection.GetDB().Collection("User")
+	objectId, _ := primitive.ObjectIDFromHex(id)
+	update = bson.M{"$set": update}
+	_, e := collection.UpdateOne(ctx, bson.M{"_id": objectId}, update)
+	if e != nil {
+		panic(e)
+	}
 }
