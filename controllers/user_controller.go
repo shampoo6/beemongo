@@ -3,9 +3,11 @@ package controllers
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/validation"
+	"github.com/oal/beego-pongo2"
 	"github.com/shampoo6/beemongo/constants"
 	"github.com/shampoo6/beemongo/errors"
 	"github.com/shampoo6/beemongo/models"
+	"github.com/shampoo6/beemongo/models/domains"
 	"github.com/shampoo6/beemongo/models/dto"
 	"github.com/shampoo6/beemongo/service/user"
 	"regexp"
@@ -13,6 +15,14 @@ import (
 
 type UserController struct {
 	beego.Controller
+}
+
+// @router / [get]
+func (c *UserController) Index() {
+	user := domains.User{Name: "Shampoo6", Sex: "Female", Age: 16}
+	pongo2.Render(c.Ctx, "my_view.html", pongo2.Context{
+		"user": user,
+	})
 }
 
 // @router /insert [get,post]
@@ -60,7 +70,7 @@ func (c *UserController) DeleteAll() {
 	ids := c.GetStrings("ids")
 	if len(ids) == 0 {
 		msg := map[string]string{"ids": "id列表不能为空"}
-		panic(errors.BusinessError{Msg: constants.ParamError.Remark, Status: constants.ParamError, Content: msg})
+		panic(errors.CError(constants.ParamError, msg))
 	}
 	c.Data["json"] = models.CSuccessResponse(user_service.DeleteAll(ids))
 	c.ServeJSON()

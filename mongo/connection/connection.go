@@ -17,10 +17,7 @@ type Connection struct {
 	db     *mongo.Database
 }
 
-func GetDB() *mongo.Database {
-	if _connection != nil {
-		return _connection.db
-	}
+func init() {
 	_connection = new(Connection)
 	_connection.url = beego.AppConfig.String("mongodb::url")
 	_connection.dbName = beego.AppConfig.String("mongodb::db")
@@ -31,5 +28,8 @@ func GetDB() *mongo.Database {
 		panic(err)
 	}
 	_connection.db = client.Database(_connection.dbName)
+}
+
+func GetDB() *mongo.Database {
 	return _connection.db
 }

@@ -20,7 +20,7 @@ func CSuccessResponse(content interface{}) map[string]interface{} {
 	}
 }
 
-// 创建系统异常响应=
+// 创建系统异常响应
 func CExceptionResponse(content string) map[string]interface{} {
 	return map[string]interface{}{
 		"msg":     constants.Exception.Remark,

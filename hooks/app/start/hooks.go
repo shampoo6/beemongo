@@ -1,9 +1,10 @@
 package start
 
 import (
-	"context"
+	goContext "context"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"github.com/shampoo6/beemongo/filters"
 	"github.com/shampoo6/beemongo/mongo/connection"
 	"github.com/shampoo6/beemongo/mongo/scanner"
 	"go.mongodb.org/mongo-driver/bson"
@@ -15,6 +16,7 @@ func init() {
 	beego.AddAPPStartHook(initLog)
 	beego.AddAPPStartHook(initMongo)
 	beego.AddAPPStartHook(initViews)
+	beego.AddAPPStartHook(filters.InitFilters)
 }
 
 func initLog() error {
@@ -72,7 +74,7 @@ func initViews() error {
 				},
 			},
 		}
-		connection.GetDB().RunCommand(context.Background(), cmd)
+		connection.GetDB().RunCommand(goContext.Background(), cmd)
 		logs.Info("创建UserView")
 	}
 
