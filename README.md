@@ -10,13 +10,14 @@ https://casbin.org/en/
 4. beego-pongo2 go服务端渲染用模板语言
 https://github.com/oal/beego-pongo2
 #### demo中有哪些实现？
-1. mongodb数据库的crud
-2. mongodb事务
-3. mongodb视图
-4. mongodb复杂关联分页查询
-5. beego统一异常处理
-6. beego拦截器，访问权限控制
-7. 使用pongo2做页面渲染
+1. 通过扫描domains目录自动创建表和索引
+2. mongodb数据库的crud
+3. mongodb事务
+4. mongodb视图
+5. mongodb复杂关联分页查询
+6. beego统一异常处理
+7. beego拦截器，访问权限控制
+8. 使用pongo2做页面渲染
 #### 待处理的问题
 1. golang的版本管理工具，实在是难用，老出问题，导致git上没有使用包的当前版本信息
 2. 考虑怎么接入微服务架构
