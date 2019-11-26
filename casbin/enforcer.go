@@ -33,10 +33,10 @@ func init() {
 	}
 
 	// Modify the policy.
-	e.AddPolicy("free", "/casbin/obj/write/:id", "GET")
-	e.AddPolicy("user", "/casbin/obj/write", "GET|POST")
-	e.AddRoleForUser("user", "free")
-	e.AddRoleForUser("5dd273b1629f127417f910ee", "user")
+	_, _ = e.AddPolicy("free", "/casbin/obj/write/:id", "GET")
+	_, _ = e.AddPolicy("user", "/casbin/obj/write", "GET|POST")
+	_, _ = e.AddRoleForUser("user", "free")
+	_, _ = e.AddRoleForUser("5dd273b1629f127417f910ee", "user")
 	// e.RemovePolicy(...)
 
 	//e.AddRoleForUser("alice", "orderAdmin")
