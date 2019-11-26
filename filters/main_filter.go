@@ -22,8 +22,6 @@ func mainFilter(ctx *context.Context) {
 	path := ctx.Request.URL.Path
 	method := ctx.Request.Method
 	b, _ := e.Enforce(user, path, method)
-	logs.Debug(b)
-	logs.Debug(e)
 
 	if !b {
 		panic(errors.CError(constants.AuthError, fmt.Sprintf("%s: %s [%s]", user, path, method)))
