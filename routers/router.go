@@ -13,6 +13,10 @@ func init() {
 	ns2 := beego.NewNamespace("/userInfo",
 		beego.NSInclude(&controllers.UserInfoController{}),
 	)
+	ns3 := beego.NewNamespace("/casbin",
+		beego.NSInclude(&controllers.CasbinTestController{}),
+	)
 	beego.AddNamespace(ns)
 	beego.AddNamespace(ns2)
+	beego.AddNamespace(ns3)
 }

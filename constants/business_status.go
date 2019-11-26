@@ -6,7 +6,8 @@ type ResponseStatus struct {
 }
 
 var (
-	Exception  ResponseStatus = ResponseStatus{"Exception", "系统异常"}
-	Success    ResponseStatus = ResponseStatus{"Success", "业务成功"}
-	ParamError ResponseStatus = ResponseStatus{"ParamError", "参数异常"}
+	Exception  = ResponseStatus{"Exception", "系统异常"}
+	AuthError  = ResponseStatus{"AuthError", "权限错误"}
+	Success    = ResponseStatus{"Success", "业务成功"}
+	ParamError = ResponseStatus{"ParamError", "参数错误"}
 )

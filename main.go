@@ -8,6 +8,10 @@ import (
 
 func main() {
 
+	//e := casbin.GetEnforcer()
+	//b, _ := e.Enforce("bot933138", "order", "read")
+	//logs.Debug(b)
+
 	beego.Run()
 
 	//user := new(domains.User)
