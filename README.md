@@ -23,3 +23,25 @@ https://github.com/oal/beego-pongo2
 2. 考虑怎么接入微服务架构
 #### 解决部分问题
 1. 依赖管理直接使用 ```go mod```
+#### 注意事项
+1. pongo2模板语法不能正确初始化，需要注释掉beego.go中的模板注册方法
+```go
+func initBeforeHTTPRun() {
+	//init hooks
+	AddAPPStartHook(
+		registerMime,
+		registerDefaultErrorHandler,
+		registerSession,
+        // 不注释这个的话启动服务会使用beego自带模板引擎，因此模板语法会报错
+		// registerTemplate,
+		registerAdmin,
+		registerGzip,
+	)
+
+	for _, hk := range hooks {
+		if err := hk(); err != nil {
+			panic(err)
+		}
+	}
+}
+```

@@ -24,7 +24,7 @@ func init() {
 	url := beego.AppConfig.String("mongodb::url")
 	a := mongodbadapter.NewAdapter(url)
 
-	e, _ = casbin.NewEnforcer(m, a)
+	e := casbin.NewEnforcer(m, a)
 
 	// Load the policy from DB.
 	err := e.LoadPolicy()
@@ -33,10 +33,10 @@ func init() {
 	}
 
 	// Modify the policy.
-	_, _ = e.AddPolicy("free", "/casbin/obj/write/:id", "GET")
-	_, _ = e.AddPolicy("user", "/casbin/obj/write", "GET|POST")
-	_, _ = e.AddRoleForUser("user", "free")
-	_, _ = e.AddRoleForUser("5dd273b1629f127417f910ee", "user")
+	e.AddPolicy("free", "/casbin/obj/write/:id", "GET")
+	e.AddPolicy("user", "/casbin/obj/write", "GET|POST")
+	e.AddRoleForUser("user", "free")
+	e.AddRoleForUser("5dd273b1629f127417f910ee", "user")
 	// e.RemovePolicy(...)
 
 	//e.AddRoleForUser("alice", "orderAdmin")
@@ -69,10 +69,7 @@ func test2(e *casbin.Enforcer) {
 				// 业务
 				botName := fmt.Sprintf("bot%d", i)
 				logs.Debug(botName)
-				_, err := _e.AddPolicy(botName, "order", "read")
-				if err != nil {
-					panic(err)
-				}
+				_e.AddPolicy(botName, "order", "read")
 				break
 			}
 		}
