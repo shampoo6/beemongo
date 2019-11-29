@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/astaxie/beego"
 	_ "github.com/shampoo6/beemongo/conf"
+	"github.com/shampoo6/beemongo/filters"
 	_ "github.com/shampoo6/beemongo/routers"
 )
 
@@ -12,6 +13,10 @@ func main() {
 	//b, _ := e.Enforce("bot933138", "order", "read")
 	//logs.Debug(b)
 
+	// filter必须在调用beego.run之前声明，不能在beego的初始化钩子声明beego.AddAPPStartHook
+	filters.InitFilters()
+	// 设置静态文件的路径
+	beego.SetStaticPath("/", "static")
 	beego.Run()
 
 	//user := new(domains.User)

@@ -4,7 +4,6 @@ import (
 	goContext "context"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
-	"github.com/shampoo6/beemongo/filters"
 	"github.com/shampoo6/beemongo/mongo/connection"
 	"github.com/shampoo6/beemongo/mongo/scanner"
 	"go.mongodb.org/mongo-driver/bson"
@@ -16,7 +15,7 @@ func init() {
 	beego.AddAPPStartHook(initLog)
 	beego.AddAPPStartHook(initMongo)
 	beego.AddAPPStartHook(initViews)
-	beego.AddAPPStartHook(filters.InitFilters)
+	//beego.AddAPPStartHook(filters.InitFilters)
 }
 
 func initLog() error {

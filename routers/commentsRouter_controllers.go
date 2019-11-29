@@ -27,18 +27,9 @@ func init() {
 
 	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
 		beego.ControllerComments{
-			Method:           "Index",
-			Router:           `/`,
-			AllowHTTPMethods: []string{"get"},
-			MethodParams:     param.Make(),
-			Filters:          nil,
-			Params:           nil})
-
-	beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"] = append(beego.GlobalControllerRouter["github.com/shampoo6/beemongo/controllers:UserController"],
-		beego.ControllerComments{
 			Method:           "DeleteAll",
 			Router:           `/delete`,
-			AllowHTTPMethods: []string{"get", "post"},
+			AllowHTTPMethods: []string{"get", "post", "options"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})
@@ -47,7 +38,7 @@ func init() {
 		beego.ControllerComments{
 			Method:           "Insert",
 			Router:           `/insert`,
-			AllowHTTPMethods: []string{"get", "post"},
+			AllowHTTPMethods: []string{"get", "post", "options"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})
@@ -56,7 +47,7 @@ func init() {
 		beego.ControllerComments{
 			Method:           "Page",
 			Router:           `/page`,
-			AllowHTTPMethods: []string{"get", "post"},
+			AllowHTTPMethods: []string{"get", "post", "options"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})
@@ -65,7 +56,7 @@ func init() {
 		beego.ControllerComments{
 			Method:           "Update",
 			Router:           `/update`,
-			AllowHTTPMethods: []string{"get", "post"},
+			AllowHTTPMethods: []string{"get", "post", "options"},
 			MethodParams:     param.Make(),
 			Filters:          nil,
 			Params:           nil})

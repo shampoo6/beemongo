@@ -17,7 +17,7 @@ type UserController struct {
 	beego.Controller
 }
 
-// @router / [get]
+// discard
 func (c *UserController) Index() {
 	user := domains.User{Name: "Shampoo6", Sex: "Female", Age: 16}
 	pongo2.Render(c.Ctx, "my_view.html", pongo2.Context{
@@ -25,7 +25,7 @@ func (c *UserController) Index() {
 	})
 }
 
-// @router /insert [get,post]
+// @router /insert [get,post,options]
 func (c *UserController) Insert() {
 	u := dto.UserDto{}
 	if err := c.ParseForm(&u); err != nil {
@@ -45,7 +45,7 @@ func (c *UserController) Insert() {
 	c.ServeJSON()
 }
 
-// @router /update [get,post]
+// @router /update [get,post,options]
 func (c *UserController) Update() {
 	u := dto.UserDto{}
 	if err := c.ParseForm(&u); err != nil {
@@ -65,7 +65,7 @@ func (c *UserController) Update() {
 	c.ServeJSON()
 }
 
-// @router /delete [get,post]
+// @router /delete [get,post,options]
 func (c *UserController) DeleteAll() {
 	ids := c.GetStrings("ids")
 	if len(ids) == 0 {
@@ -76,7 +76,7 @@ func (c *UserController) DeleteAll() {
 	c.ServeJSON()
 }
 
-// @router /page [get,post]
+// @router /page [get,post,options]
 func (c *UserController) Page() {
 	page := models.Page{}
 	if err := c.ParseForm(&page); err != nil {

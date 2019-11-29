@@ -94,7 +94,7 @@ func initBeforeHTTPRun() {
 		registerMime,
 		registerDefaultErrorHandler,
 		registerSession,
-		registerTemplate,
+		//registerTemplate,
 		registerAdmin,
 		registerGzip,
 	)

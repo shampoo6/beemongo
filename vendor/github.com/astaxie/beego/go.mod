@@ -23,7 +23,6 @@ require (
 	github.com/mattn/go-sqlite3 v1.10.0
 	github.com/pelletier/go-toml v1.2.0 // indirect
 	github.com/pkg/errors v0.8.0 // indirect
-	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644
 	github.com/siddontang/go v0.0.0-20180604090527-bdc77568d726 // indirect
 	github.com/siddontang/ledisdb v0.0.0-20181029004158-becf5f38d373
 	github.com/siddontang/rdb v0.0.0-20150307021120-fc89ed2e418d // indirect
@@ -38,5 +37,3 @@ require (
 replace golang.org/x/crypto v0.0.0-20181127143415-eb0de9b17e85 => github.com/golang/crypto v0.0.0-20181127143415-eb0de9b17e85
 
 replace gopkg.in/yaml.v2 v2.2.1 => github.com/go-yaml/yaml v0.0.0-20180328195020-5420a8b6744d
-
-go 1.13

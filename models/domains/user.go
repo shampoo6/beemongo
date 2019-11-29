@@ -24,10 +24,10 @@ type User struct {
 	Age uint8 `bson:"Age"` // 年龄
 }
 
-func Page(page *models.Page, dto *dto.UserDto) models.PageResult {
-	col := connection.GetDB().Collection("User")
-	result := &[]User{}
-	query := dto.GetQuery()
+func Page(page *models.Page, _dto *dto.UserDto) models.PageResult {
+	col := connection.GetDB().Collection("UserView")
+	result := &[]dto.UserView{}
+	query := _dto.GetQuery()
 	_options := page.Query(col, query)
 	cursor, err := col.Find(context.Background(), query, _options)
 	if err != nil {
@@ -35,7 +35,7 @@ func Page(page *models.Page, dto *dto.UserDto) models.PageResult {
 	}
 	defer cursor.Close(context.Background())
 	for cursor.Next(context.Background()) {
-		var one User
+		var one dto.UserView
 		if err = cursor.Decode(&one); err != nil {
 			panic(err)
 		}
